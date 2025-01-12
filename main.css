@@ -3,3 +3,56 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-size: 62.5%;
+  background-color: #393e41;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.sign-up-form {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.bg-image {
+  width: 50%;
+}
+
+img {
+  width: 50%;
+}
+
+.account {
+  width: 50%;
+  background-color: #f6f7eb;
+}
+
+.form-group {
+  display: flex;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+input {
+  /* width: 100%; */
+  border: 1px solid #393e41;
+  border-radius: 3px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  /* width: 100%; */
+  border: 1px solid #393e41;
+}

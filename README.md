@@ -28,5 +28,5 @@ For more details about the project check on this [link](https://www.theodinproje
 
 ### Links
 
-- Solution URL: [solution]()
-- Live preview: [preview]()
+- Solution URL: [solution](https://github.com/Pc-Kirui/sign-up-form)
+- Live preview: [preview](https://pc-kirui.github.io/sign-up-form/)

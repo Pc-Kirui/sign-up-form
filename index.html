@@ -5,64 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="sign-up-form">
-      <div class="bg-image">
+      <div class="img-container">
         <img
           src="/assets/hes-mundt-rToVKJc65fo-unsplash.jpg"
           alt="Ayshire-Cattle"
+          class="hes"
         />
+        <div class="img-body">
+          <img src="/assets/odin-lined.png" alt="Odin" />
+          <p>Odin</p>
+        </div>
+        <div class="img-credits">Photo by Hes Mundt on Unsplash</div>
       </div>
       <div class="account">
-        <form action="#" method="post">
-          <div class="intro">
-            <p>
-              This is not a real online service! You know you need something
-              like this in your life to help you realize your deepest dreams.
-              Sign up now to get started.
-            </p>
-            <p>You <em>know</em> you want to.</p>
-          </div>
+        <div class="intro pad">
+          <p>
+            <span>Dairy Farming - </span>Keeping dairy cows is both fun and an
+            income generating activity. Dairy farmers work 365 days a year to
+            provide wholesome, nutritious milk while caring for their animals
+            and land. To help you understand who farmers are and how they raise
+            the animals that make your milk, you need something like this. This
+            is not a real online service!
+          </p>
 
-          <div class="pers-details">
-            <div class="form-group">
-              <p>
-                <label for="first-name">first name</label>
-                <input type="text" id="first-name" name="first-name" />
-              </p>
-              <p>
-                <label for="last-name">last name</label>
-                <input type="text" id="last-name" name="last-name" />
-              </p>
-            </div>
-            <div class="form-group">
-              <p>
-                <label for="email">email</label>
-                <input type="email" id="email" name="e-mail" />
-              </p>
-              <p>
-                <label for="phone-num">phone number</label>
-                <input type="number" id="phone-num" name="phone-number" />
-              </p>
-            </div>
-            <div class="form-group">
-              <p>
-                <label for="password">password</label>
-                <input type="password" id="password" name="password" />
-              </p>
+          <p><em>Sign up</em> now to get started.</p>
+        </div>
 
-              <p>
-                <label for="confirm-passwd">confirm password</label>
-                <input type="password" id="confirm-passwd" name="password" />
-              </p>
+        <div class="form">
+          <h2 class="heading">Let's do this</h2>
+          <form action="#" method="post">
+            <div class="pers-details">
+              <div class="form-group">
+                <p>
+                  <label for="first-name">first name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
+                </p>
+                <p>
+                  <label for="last-name">last name</label>
+                  <input type="text" id="last-name" name="last-name" required />
+                </p>
+              </div>
+
+              <div class="form-group">
+                <p>
+                  <label for="email">email</label>
+                  <input type="email" id="email" name="e-mail" required />
+                </p>
+                <p>
+                  <label for="phone-num">phone number</label>
+                  <input
+                    type="tel"
+                    id="phone-num"
+                    name="phone-number"
+                    pattern="+[0-9]"
+                    required
+                  />
+                </p>
+              </div>
+
+              <div class="form-group">
+                <p>
+                  <label for="password">password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    minlength="8"
+                    pattern="[0-9a-zA-Z]"
+                    required
+                  />
+                </p>
+
+                <p>
+                  <label for="confirm-passwd">confirm password</label>
+                  <input
+                    type="password"
+                    id="confirm-passwd"
+                    name="password"
+                    minlength="8"
+                    pattern="[0-9a-zA-Z]"
+                    required
+                  />
+                </p>
+              </div>
             </div>
-          </div>
-          <div>
-            <button type="submit" class="signUp-btn">create account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
-          </div>
-        </form>
+
+            <div class="submit pad">
+              <button type="submit" class="signUp-btn">create account</button>
+            </div>
+          </form>
+
+          <p class="pad">Already have an account? <a href="#">Log in</a></p>
+        </div>
       </div>
     </section>
   </body>
